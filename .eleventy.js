@@ -1,6 +1,5 @@
 const { DateTime } = require("luxon");
 const readingTime = require("eleventy-plugin-reading-time");
-const pluginSEO = require("eleventy-plugin-seo");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./build/style.css");
@@ -23,8 +22,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/robots.txt");
   eleventyConfig.addPassthroughCopy("admin");
   eleventyConfig.setDataDeepMerge(true);
-
-  eleventyConfig.addPlugin(pluginSEO, require("./src/_data/site.json"));
 
   // Insert current year
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
