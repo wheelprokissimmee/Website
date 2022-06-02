@@ -656,14 +656,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-bottom-width: 1px;
 }
 
-.bg-gray-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#342E37\] {
   --tw-bg-opacity: 1;
   background-color: rgb(52 46 55 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#1D2C46\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 44 70 / var(--tw-bg-opacity));
 }
 
 .bg-transparent {

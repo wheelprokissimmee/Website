@@ -18,6 +18,11 @@ html {
   font-family: proxima-nova, sans-serif;
 }
 
+body .special-nav {
+	position: sticky;
+	top: 0;
+}
+
 .section-styling {
   padding: 2.5em;
   margin-bottom: 0.5em;
@@ -27,9 +32,24 @@ html {
 
 .hero-section-index {
   background: linear-gradient(rgba(0, 0, 0, 0.687), rgba(0, 0, 0, 0.69)),
-    url("https://i.ibb.co/pPzFGpW/284450287-393387886137610-6267579420561048704-n.jpg");
+    url("https://i.ibb.co/M1c09bq/IMG-0571.jpg");
+  background-position: center center;
   background-size: cover;
-  height: 50vh;
+  height: 80vh;
+}
+
+.top-nav {
+  height: 20vh;
+  img {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10000;
+    width: 25%;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -37,5 +57,9 @@ html {
     padding: 1.2em;
     margin-top: 0.8em;
     margin-bottom: 0.8em;
+  }
+
+  .top-nav {
+    display: none;
   }
 }
