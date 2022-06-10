@@ -38,6 +38,12 @@ body .special-nav {
   display: block;
 }
 
+.carousel-title {
+  font-family: Ask-Why;
+  font-size: 3.7em;
+  text-align: left;
+}
+
 .hero-section-index {
   background: linear-gradient(rgba(0, 0, 0, 0.687), rgba(0, 0, 0, 0.69)),
     url("https://i.ibb.co/M1c09bq/IMG-0571.jpg");
@@ -48,6 +54,11 @@ body .special-nav {
   h1 {
     font-family: Ask-Why;
     font-size: 4em;
+    color: #62f256;
+    text-align: center;
+  }
+  button {
+    font-size: 1.3em;
   }
 }
 
@@ -61,7 +72,94 @@ body .special-nav {
     right: 0;
     text-align: center;
     z-index: 10000;
-    width: 25%;
+    width: 23.5%;
+  }
+}
+
+.special-nav {
+  background-color: #342e37;
+}
+
+.servicios {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("https://i.ibb.co/2YwjBYW/277256876-353604346782631-3565152095420618656-n.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 55vh;
+  h1 {
+    font-family: Ask-Why;
+    font-size: 3.7em;
+    text-align: left;
+  }
+
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.3em;
+    text-align: left;
+    color: #1d2c46;
+  }
+}
+
+.main-carousel {
+  .carousel-cell {
+    img {
+      max-height: 40vh;
+    }
+  }
+}
+.controls-events {
+  .carousel-button {
+    padding: 0.4em;
+    background-color: #1d2c46;
+  }
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 10fr));
+  grid-gap: 10px;
+  img {
+    width: 100%;
+  }
+}
+
+.financing-cards {
+  justify-content: space-between;
+  align-content: center;
+
+  .fc {
+    background-color: #f2f4f3;
+    transition: 0.25s ease;
+  }
+  .fc:first-child {
+    margin-right: 0.5em;
+  }
+  .fc:last-child {
+    margin-left: 0.5em;
+  }
+  .fc:hover {
+    background-color: #e6eae8;
+  }
+}
+
+.socials-sc {
+  justify-content: space-evenly;
+  margin-top: 1em;
+  img {
+    width: 30%;
+    padding: 1em;
+  }
+  .sc {
+    background-color: #f2f4f3;
+    width: 35%;
+    transition: 0.25s ease;
+  }
+  .sc:hover {
+    background-color: #e6eae8;
   }
 }
 
@@ -74,5 +172,70 @@ body .special-nav {
 
   .top-nav {
     display: none;
+  }
+  .hero-section-index {
+    background-position: left;
+    height: 50vh;
+    .padding-hero {
+      padding: 1em;
+      margin-bottom: 0.5em;
+      h1 {
+        font-size: 2.2em;
+        text-align: center;
+      }
+      button {
+        font-size: 1.1em;
+      }
+    }
+  }
+
+  .special-nav {
+    background-color: #1d2c46;
+  }
+
+  .servicios {
+    h1 {
+      font-family: Ask-Why;
+      font-size: 3.2em;
+      text-align: left;
+    }
+
+    p {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 2.1em;
+      text-align: left;
+      color: #1d2c46;
+    }
+  }
+  .main-carousel {
+    .carousel-cell {
+      img {
+        height: 40vh;
+      }
+    }
+  }
+
+  .controls-events {
+    .carousel-button {
+      padding: 0.5em;
+      background-color: #1d2c46;
+    }
+  }
+  .financing-cards {
+    flex-direction: column;
+    .fc {
+      background-color: #f2f4f3;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+      img {
+        width: 100%;
+      }
+    }
+    .fc:first-child {
+      margin-right: 0em;
+    }
+    .fc:last-child {
+      margin-left: 0em;
+    }
   }
 }

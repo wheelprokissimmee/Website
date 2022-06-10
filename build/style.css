@@ -38,6 +38,12 @@ body .special-nav {
   display: block;
 }
 
+.carousel-title {
+  font-family: Ask-Why;
+  font-size: 3.7em;
+  text-align: left;
+}
+
 .hero-section-index {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.687)), to(rgba(0, 0, 0, 0.69))), url("https://i.ibb.co/M1c09bq/IMG-0571.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.687), rgba(0, 0, 0, 0.69)), url("https://i.ibb.co/M1c09bq/IMG-0571.jpg");
@@ -49,6 +55,12 @@ body .special-nav {
 .hero-section-index h1 {
   font-family: Ask-Why;
   font-size: 4em;
+  color: #62f256;
+  text-align: center;
+}
+
+.hero-section-index button {
+  font-size: 1.3em;
 }
 
 .top-nav {
@@ -63,7 +75,103 @@ body .special-nav {
   right: 0;
   text-align: center;
   z-index: 10000;
-  width: 25%;
+  width: 23.5%;
+}
+
+.special-nav {
+  background-color: #342e37;
+}
+
+.servicios {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url("https://i.ibb.co/2YwjBYW/277256876-353604346782631-3565152095420618656-n.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("https://i.ibb.co/2YwjBYW/277256876-353604346782631-3565152095420618656-n.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 55vh;
+}
+
+.servicios h1 {
+  font-family: Ask-Why;
+  font-size: 3.7em;
+  text-align: left;
+}
+
+.servicios p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.3em;
+  text-align: left;
+  color: #1d2c46;
+}
+
+.main-carousel .carousel-cell img {
+  max-height: 40vh;
+}
+
+.controls-events .carousel-button {
+  padding: 0.4em;
+  background-color: #1d2c46;
+}
+
+#grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 10fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(200px, 10fr));
+  grid-gap: 10px;
+}
+
+#grid img {
+  width: 100%;
+}
+
+.financing-cards {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.financing-cards .fc {
+  background-color: #f2f4f3;
+  -webkit-transition: 0.25s ease;
+  transition: 0.25s ease;
+}
+
+.financing-cards .fc:first-child {
+  margin-right: 0.5em;
+}
+
+.financing-cards .fc:last-child {
+  margin-left: 0.5em;
+}
+
+.financing-cards .fc:hover {
+  background-color: #e6eae8;
+}
+
+.socials-sc {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 1em;
+}
+
+.socials-sc img {
+  width: 30%;
+  padding: 1em;
+}
+
+.socials-sc .sc {
+  background-color: #f2f4f3;
+  width: 35%;
+  -webkit-transition: 0.25s ease;
+  transition: 0.25s ease;
+}
+
+.socials-sc .sc:hover {
+  background-color: #e6eae8;
 }
 
 @media (max-width: 1000px) {
@@ -74,6 +182,62 @@ body .special-nav {
   }
   .top-nav {
     display: none;
+  }
+  .hero-section-index {
+    background-position: left;
+    height: 50vh;
+  }
+  .hero-section-index .padding-hero {
+    padding: 1em;
+    margin-bottom: 0.5em;
+  }
+  .hero-section-index .padding-hero h1 {
+    font-size: 2.2em;
+    text-align: center;
+  }
+  .hero-section-index .padding-hero button {
+    font-size: 1.1em;
+  }
+  .special-nav {
+    background-color: #1d2c46;
+  }
+  .servicios h1 {
+    font-family: Ask-Why;
+    font-size: 3.2em;
+    text-align: left;
+  }
+  .servicios p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.1em;
+    text-align: left;
+    color: #1d2c46;
+  }
+  .main-carousel .carousel-cell img {
+    height: 40vh;
+  }
+  .controls-events .carousel-button {
+    padding: 0.5em;
+    background-color: #1d2c46;
+  }
+  .financing-cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .financing-cards .fc {
+    background-color: #f2f4f3;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  .financing-cards .fc img {
+    width: 100%;
+  }
+  .financing-cards .fc:first-child {
+    margin-right: 0em;
+  }
+  .financing-cards .fc:last-child {
+    margin-left: 0em;
   }
 }
 /*# sourceMappingURL=style.css.map */

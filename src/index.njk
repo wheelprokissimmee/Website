@@ -13,7 +13,7 @@ layout: "indexbase.njk"
 
 <div class="special-nav z-50 max-w-full" style="width: 100%">
   <div class="antialiased">
-    <div class="w-full text-white bg-[#1D2C46] navigation-bar-special">
+    <div class="w-full text-white navigation-bar-special">
       <div
         x-data="{ open: false }"
         class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8"
@@ -23,18 +23,9 @@ layout: "indexbase.njk"
             href="/"
             class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline flex"
           >
-            <img
-              class="nav-image"
-              style="display: none"
-              src="https://i.ibb.co/pK9xg53/Untitled-design.png"
-              width="10%"
-          /></a>
-
-          <a
-            href="/"
-            class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline flex"
-          >
-            <span class="nav-word text-white">Wheels Pro</span></a
+            <span class="nav-word text-white text-left"
+              >Wheels Pro Kissimmee</span
+            ></a
           >
           <button
             class="rounded-lg md:hidden focus:outline-none focus:shadow-outline"
@@ -118,66 +109,23 @@ layout: "indexbase.njk"
   </div>
 </div>
 
-{% include 'sections/hero.njk' %}
+{% include 'sections/hero.njk' %} {% include 'sections/about.njk' %} {% include
+'sections/offering.njk' %} {% include 'sections/gallery.njk' %} {% include
+'sections/financing.njk' %}{% include 'sections/socials.njk' %}
 
-<!-- <script>
+<script>
   $(document).ready(function () {
     $(window).scroll(function () {
-      if ($(window).scrollTop() > 30) {
-        $(".nav-image").css({
-          display: "none",
-          animation: "opacityappear",
+      if ($(window).scrollTop() >= 170 && $(window).width() > 1000) {
+        $(".navigation-bar-special").css({
+          "background-color": "#1D2C46",
           transition: "200ms linear",
         });
-        $(".nav-word").css({
-          display: "block",
-          animation: "opacitydisappear",
-          transition: "200ms linear",
-        });
+      } else if ($(window).scrollTop() <= 170 && $(window).width() > 1000) {
+        $(".navigation-bar-special").css({ "background-color": "#342E37" });
       } else {
-        $(".nav-image").css({
-          display: "block",
-          animation: "opacitydisappear",
-          transition: "200ms linear",
-        });
-        $(".nav-word").css({
-          display: "none",
-          animation: "opacityappear",
-          transition: "200ms linear",
-        });
+        $(".navigation-bar-special").css({ "background-color": "#1D2C46" });
       }
     });
   });
 </script>
-
-<style>
-  @keyframes opacityappear {
-    0% {
-      opacity: 0;
-    }
-    20% {
-      opacity: 1;
-    }
-    80% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  @keyframes opacitydisappear {
-    0% {
-      opacity: 1;
-    }
-    20% {
-      opacity: 0;
-    }
-    80% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-</style> -->
