@@ -238,4 +238,23 @@ body .special-nav {
       margin-left: 0em;
     }
   }
+
+  .socials-sc {
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-top: 1em;
+    img {
+      width: 40%;
+      padding: 1em;
+    }
+    .sc {
+      background-color: #f2f4f3;
+      width: 100%;
+      transition: 0.25s ease;
+      margin-bottom: 1em;
+    }
+    .sc:hover {
+      background-color: #e6eae8;
+    }
+  }
 }

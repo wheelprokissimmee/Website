@@ -239,5 +239,29 @@ body .special-nav {
   .financing-cards .fc:last-child {
     margin-left: 0em;
   }
+  .socials-sc {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 1em;
+  }
+  .socials-sc img {
+    width: 40%;
+    padding: 1em;
+  }
+  .socials-sc .sc {
+    background-color: #f2f4f3;
+    width: 100%;
+    -webkit-transition: 0.25s ease;
+    transition: 0.25s ease;
+    margin-bottom: 1em;
+  }
+  .socials-sc .sc:hover {
+    background-color: #e6eae8;
+  }
 }
 /*# sourceMappingURL=style.css.map */
