@@ -202,7 +202,10 @@ body .special-nav {
     background-color: #1d2c46;
   }
   .nav-word {
-    font-size: 1em;
+    font-size: 1.3em;
+  }
+  .servicios {
+    height: 55vh;
   }
   .servicios h1 {
     font-family: Ask-Why;
@@ -279,7 +282,7 @@ body .special-nav {
   }
   .hero-section-index {
     background-position: left;
-    height: 50vh;
+    height: 55vh;
   }
   .hero-section-index .padding-hero {
     padding: 1em;
@@ -290,13 +293,13 @@ body .special-nav {
     text-align: center;
   }
   .hero-section-index .padding-hero button {
-    font-size: 1.1em;
+    font-size: 1em;
   }
   .special-nav {
     background-color: #1d2c46;
   }
   .nav-word {
-    font-size: .7em;
+    font-size: .8em;
   }
   .servicios h1 {
     font-family: Ask-Why;
