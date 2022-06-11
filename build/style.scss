@@ -89,7 +89,7 @@ body .special-nav {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 55vh;
+  height: 70vh;
   h1 {
     font-family: Ask-Why;
     font-size: 3.7em;
@@ -180,7 +180,7 @@ body .special-nav {
       padding: 1em;
       margin-bottom: 0.5em;
       h1 {
-        font-size: 2.2em;
+        font-size: 1.8em;
         text-align: center;
       }
       button {
@@ -191,6 +191,10 @@ body .special-nav {
 
   .special-nav {
     background-color: #1d2c46;
+  }
+
+  .nav-word {
+    font-size: 1em;
   }
 
   .servicios {
@@ -244,7 +248,7 @@ body .special-nav {
     flex-direction: column;
     margin-top: 1em;
     img {
-      width: 40%;
+      width: 35%;
       padding: 1em;
     }
     .sc {
@@ -258,3 +262,104 @@ body .special-nav {
     }
   }
 }
+
+@media (max-width: 600px) {
+  .section-styling {
+    padding: 1.2em;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+  }
+
+  .top-nav {
+    display: none;
+  }
+  .hero-section-index {
+    background-position: left;
+    height: 50vh;
+    .padding-hero {
+      padding: 1em;
+      margin-bottom: 0.5em;
+      h1 {
+        font-size: 1.7em;
+        text-align: center;
+      }
+      button {
+        font-size: 1.1em;
+      }
+    }
+  }
+
+  .special-nav {
+    background-color: #1d2c46;
+  }
+
+  .nav-word {
+    font-size: .7em;
+  }
+
+  .servicios {
+    h1 {
+      font-family: Ask-Why;
+      font-size: 2.3em;
+      text-align: left;
+    }
+
+    p {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.9em;
+      text-align: left;
+      color: #1d2c46;
+    }
+  }
+  .main-carousel {
+    .carousel-cell {
+      img {
+        height: 40vh;
+      }
+    }
+  }
+
+  .controls-events {
+    .carousel-button {
+      padding: 0.5em;
+      background-color: #1d2c46;
+    }
+  }
+  .financing-cards {
+    flex-direction: column;
+    .fc {
+      background-color: #f2f4f3;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+      img {
+        width: 100%;
+      }
+    }
+    .fc:first-child {
+      margin-right: 0em;
+    }
+    .fc:last-child {
+      margin-left: 0em;
+    }
+  }
+
+  .socials-sc {
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-top: 1em;
+    img {
+      width: 30%;
+      padding: 1em;
+    }
+    .sc {
+      background-color: #f2f4f3;
+      width: 100%;
+      transition: 0.25s ease;
+      margin-bottom: 1em;
+    }
+    .sc:hover {
+      background-color: #e6eae8;
+    }
+  }
+}
+
