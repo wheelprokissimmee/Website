@@ -45,7 +45,7 @@ body .special-nav {
 }
 
 .hero-section-index {
-  background: linear-gradient(rgba(0, 0, 0, 0.687), rgba(0, 0, 0, 0.69)),
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("https://i.ibb.co/1J1XMGC/IMG-3496.jpg");
   background-position: center center;
   background-size: cover;
@@ -82,8 +82,8 @@ body .special-nav {
 
 .servicios {
   background: linear-gradient(
-      rgba(255, 255, 255, 0.7),
-      rgba(255, 255, 255, 0.7)
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
     ),
     url("https://i.ibb.co/2YwjBYW/277256876-353604346782631-3565152095420618656-n.jpg");
   background-position: center center;
@@ -94,6 +94,7 @@ body .special-nav {
     font-family: Ask-Why;
     font-size: 3.7em;
     text-align: left;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
   }
 
   p {
@@ -101,6 +102,7 @@ body .special-nav {
     font-size: 2.3em;
     text-align: left;
     color: #1d2c46;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
   }
 }
 
@@ -161,6 +163,49 @@ body .special-nav {
   .sc:hover {
     background-color: #e6eae8;
   }
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1rem 1.5rem;
+  width: 24rem;
+}
+
+.close-button {
+  float: right;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray;
+}
+
+.close-button:hover {
+  background-color: darkgray;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
 
 @media (max-width: 1000px) {
@@ -295,7 +340,7 @@ body .special-nav {
   }
 
   .nav-word {
-    font-size: .8em;
+    font-size: 0.8em;
   }
 
   .servicios {
@@ -363,4 +408,3 @@ body .special-nav {
     }
   }
 }
-

@@ -3,3 +3,4 @@ package = "netlify-plugin-image-optim"
 
 [build]
 functions = "functions"
+publish = "public"
