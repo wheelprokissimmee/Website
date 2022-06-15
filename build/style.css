@@ -1,6 +1,6 @@
 @font-face {
   font-family: Ask-Why;
-  src: url("/assets/Ask-Why.woff"), url("/assets/Ask-Why.ttf");
+  src: url("/assets/Ask-Why.woff") format("woff"), url("/assets/Ask-Why.ttf") format("truetype"), url("/assets/Ask-Why.woff2") format("woff2"), url("/assets/Ask-Why.otf") format("opentype");
 }
 
 /* SCSS */
