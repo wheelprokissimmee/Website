@@ -176,6 +176,10 @@ body .special-nav {
   background-color: #e6eae8;
 }
 
+.special-font {
+  font-family: Ask-Why;
+}
+
 .modal {
   position: fixed;
   left: 0;
@@ -340,7 +344,7 @@ body .special-nav {
     margin-bottom: 0.5em;
   }
   .hero-section-index .padding-hero h1 {
-    font-size: 1.7em;
+    font-size: 1.5em;
     text-align: center;
   }
   .hero-section-index .padding-hero button {

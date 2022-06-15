@@ -165,6 +165,10 @@ body .special-nav {
   }
 }
 
+.special-font {
+  font-family: Ask-Why;
+}
+
 .modal {
   position: fixed;
   left: 0;
@@ -326,7 +330,7 @@ body .special-nav {
       padding: 1em;
       margin-bottom: 0.5em;
       h1 {
-        font-size: 1.7em;
+        font-size: 1.5em;
         text-align: center;
       }
       button {
