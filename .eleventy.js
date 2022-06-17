@@ -1,5 +1,6 @@
 const { DateTime } = require("luxon");
 const readingTime = require("eleventy-plugin-reading-time");
+// const lazyImagesPlugin = require("eleventy-plugin-lazyimages");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./build/style.css");
@@ -22,6 +23,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/robots.txt");
   eleventyConfig.addPassthroughCopy("admin");
   eleventyConfig.setDataDeepMerge(true);
+
+  // eleventyConfig.addPlugin(lazyImagesPlugin);
 
   // Insert current year
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
