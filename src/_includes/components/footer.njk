@@ -1,3 +1,5 @@
+{%- for footer in collections.footer -%}
+
 <div class="px-4 pt-16 md:px-24 lg:px-8 bg-[#1D2C46] text-white">
   <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
     <div class="sm:col-span-2">
@@ -13,9 +15,7 @@
       </a>
       <div class="mt-6 lg:max-w-sm">
         <p class="text-sm">
-          Wheelpro Kissimmee Fl LLC se especialisa en aros original y replicas
-          de los original,es una empresa familiar atendida por mujeres y su
-          dueño Victor Alexie Cosme.
+          {{ footer.data.description }}
         </p>
       </div>
     </div>
@@ -24,31 +24,32 @@
       <div class="flex">
         <p class="mr-1 font-bold">Office:</p>
         <a
-          href="tel:407-723-3889"
+          href="tel:{{ footer.data.officenumber }}"
           aria-label="Our phone"
           title="Our phone"
           class="transition-colors duration-300 hover:text-slate-300"
-          >407-723-3889</a
+          >{{ footer.data.officenumber }}</a
         >
       </div>
       <div class="flex">
         <p class="mr-1 font-bold">Cellular:</p>
         <a
-          href="tel:407-723-6374"
+          href="tel:{{ footer.data.cellularnumber }}"
           aria-label="Our phone"
           title="Our phone"
           class="transition-colors duration-300 hover:text-slate-300"
-          >407-723-6374</a
+          >{{ footer.data.cellularnumber }}</a
         >
       </div>
       <div class="flex">
         <p class="mr-1 font-bold">Email:</p>
         <a
-          href="mailto:wheelprokissimmee09@gmail.com "
+          href="mailto: {{ footer.data.email }}"
           aria-label="Our email"
           title="Our email"
           class="transition-colors duration-300 hover:text-slate-300"
-          >wheelprokissimmee09@gmail.com
+        >
+          {{ footer.data.email }}
         </a>
       </div>
       <div class="flex">
@@ -56,14 +57,14 @@
       </div>
       <div class="flex">
         <a
-          href="https://www.google.com/maps?saddr=John-Henry-Jones-Blvd.-1897,Kissimmee,FL,34741,United-States&daddr"
+          href="{{ footer.data.addresslink }}"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Our address"
           title="Our address"
           class="transition-colors duration-300 hover:text-slate-300"
         >
-          John Henry Jones Blvd. 1897 Kissimmee, FL 34741 United States
+          {{ footer.data.address }}
         </a>
       </div>
     </div>
@@ -142,3 +143,5 @@
     </ul>
   </div>
 </div>
+
+{%- endfor -%}
