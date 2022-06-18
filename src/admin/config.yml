@@ -2,6 +2,7 @@ backend:
   name: git-gateway
   branch: master
 media_folder: "public/assets/"
+logo_url: "https://i.ibb.co/pK9xg53/Untitled-design.png"
 public_folder: "/assets/"
 collections:
   - name: "page"
@@ -28,6 +29,7 @@ collections:
     folder: "src/frequentlyaskedquestions"
     slug: "{{slug}}"
     create: true
+    preview: false
     fields:
       - { label: "Question", name: "title", widget: "string" }
       - { label: "Response", name: "response", widget: "string" }
@@ -37,6 +39,7 @@ collections:
     folder: "src/popup"
     slug: "{{slug}}"
     create: false
+    preview: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Response", name: "response", widget: "string" }
@@ -48,11 +51,13 @@ collections:
     folder: "src/services"
     slug: "{{slug}}"
     create: true
+    preview: false
     fields:
       - { label: "Service", name: "service", widget: "string" }
 
   - name: "footer"
     label: "Footer"
+    preview: false
     description: >
       Esto es la parte de abajo de la pagina web.
     folder: "src/footer"
