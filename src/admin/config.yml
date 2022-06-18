@@ -29,7 +29,8 @@ collections:
     folder: "src/frequentlyaskedquestions"
     slug: "{{slug}}"
     create: true
-    preview: false
+    editor:
+      preview: false
     fields:
       - { label: "Question", name: "title", widget: "string" }
       - { label: "Response", name: "response", widget: "string" }
@@ -39,7 +40,8 @@ collections:
     folder: "src/popup"
     slug: "{{slug}}"
     create: false
-    preview: false
+    editor:
+      preview: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Response", name: "response", widget: "string" }
@@ -51,13 +53,15 @@ collections:
     folder: "src/services"
     slug: "{{slug}}"
     create: true
-    preview: false
+    editor:
+      preview: false
     fields:
       - { label: "Service", name: "service", widget: "string" }
 
   - name: "footer"
     label: "Footer"
-    preview: false
+    editor:
+      preview: false
     description: >
       Esto es la parte de abajo de la pagina web.
     folder: "src/footer"
