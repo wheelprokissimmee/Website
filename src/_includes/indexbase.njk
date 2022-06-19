@@ -144,4 +144,12 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+  <script>
+    // Only show loader if JS is available
+    document.body.className += ' has-js';
+    // Option 1: Hide loader when 'load' event fires
+    window.onload = function() { document.body.className += ' loaded'; }
+    // Option 2: Hide loader after 2 seconds, in case the 'load' event never fires
+    setTimeout(function(){ document.body.className += ' loaded'; }, 1000 * 2);
+  </script>
 </html>
