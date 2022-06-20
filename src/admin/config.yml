@@ -45,6 +45,32 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Response", name: "response", widget: "string" }
+  
+    - name: "gallery"
+    label: "Gallery"
+    folder: "src/gallery"
+    slug: "{{slug}}"
+    create: false
+    editor:
+      preview: false
+    fields:
+      - { label: "Image", name: "img", widget: "image", allow_multiple: true }
+     media_library:
+      config:
+        multiple: true
+
+    - name: "exclusives"
+    label: "Exclusives"
+    folder: "src/exclusives"
+    slug: "{{slug}}"
+    create: false
+    editor:
+      preview: false
+    fields:
+      - { label: "Image", name: "img", widget: "image", allow_multiple: true  }
+     media_library:
+      config:
+        multiple: true
 
   - name: "services"
     label: "Services"
