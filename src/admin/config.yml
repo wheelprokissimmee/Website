@@ -87,6 +87,18 @@ collections:
     fields:
       - { label: "Image", name: "img", widget: "image", allow_multiple: true }
 
+  - name: "exclusives"
+    label: "Exclusives"
+    editor:
+      preview: false
+    description: >
+      Todos los exclusivos
+    folder: "src/exclusives"
+    slug: "{{slug}}"
+    create: false
+    fields:
+      - { label: "Image", name: "img", widget: "image", allow_multiple: true }
+
 
     # - name: "gallery"
     # label: "Gallery"
