@@ -74,3 +74,21 @@ collections:
       - { label: "Email", name: "email", widget: "string" }
       - { label: "Address", name: "address", widget: "string" }
       - { label: "Address Link", name: "addresslink", widget: "string" }
+  
+  - name: "multipe"
+    label: "Multiple"
+    description: >
+      Esto es para crear una coleccion de paginas.
+    folder: "src/test"
+    slug: "{{slug}}"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - name: authors
+        label: Authors
+        label_singular: 'Author'
+        widget: list
+        fields:
+          - { label: 'Name', name: 'name', widget: 'string', hint: 'First and Last' }
+          - { label: 'Description', name: 'description', widget: 'markdown' }
