@@ -1,7 +1,6 @@
 ---
 description: Wheelpro Kissimmee Fl LLC se especialisa en aros original y
-  replicas de los original,es una empresa familiar atendida por mujeres y su
-  dueño Victor Alexie Cosme.
+  replicas de los original,es una empresa familiar atendida por mujeres.
 officenumber: 407-723-6374
 cellularnumber: 407-723-3889
 email: wheelprokissimmee09@gmail.com
