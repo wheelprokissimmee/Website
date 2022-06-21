@@ -17,6 +17,7 @@
         <p class="text-sm">
           {{ footer.data.description }}
         </p>
+        <p class="mt-2">Store is: <a href="/p/location/" class="hover:underline"><span class="storeOpen uppercase"></span></a></p>
       </div>
     </div>
     <div class="space-y-2 text-sm">
@@ -145,3 +146,24 @@
 </div>
 
 {%- endfor -%}
+
+<script>
+  var openText = "Closed";
+
+  var d = new Date();
+
+  if (d.getDay() > 0 && d.getDay() <= 6) {
+    var currentHour = d.getHours();
+    if (currentHour > 10 && currentHour < 17) {
+      openText = "Open";
+      $(".storeOpen").css("color", "#62f256");
+    } else {
+      openText = "Closed for the day.";
+      $(".storeOpen").css("color", "red");
+    }
+  } else {
+    openText = "Closed for the weekend.";
+  }
+
+  $(".storeOpen").text(openText);
+</script>
