@@ -27,4 +27,6 @@ img:
   - https://i.ibb.co/Gp6W2fM/IMG-3182.jpg
   - /assets/img_1347.jpg
   - /assets/image_6483441.jpg
+  - /assets/image_6483441-1-.jpg
+  - /assets/image_6483441-2-.jpg
 ---
