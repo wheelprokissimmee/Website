@@ -2,13 +2,11 @@
   font-family: Ask-Why;
   src: url("/assets/Ask-Why.ttf") format("truetype"), url("/assets/Ask-Why.woff") format("woff"), url("/assets/Ask-Why.eot") format("eot"), url("fonts/Ask-Why.eot?#iefix") format("embedded-opentype"), url("/assets/Ask-Why.svg") format("svg"), url("fonts/Ask-Why.svg#Ask Why") format("svg"), url("/assets/Ask-Why.otf") format("opentype"), url("/assets/Ask-Why.woff2") format("woff2");
 }
-
 /* SCSS */
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border: transparent;
   outline: transparent;
 }
@@ -26,7 +24,6 @@ html {
 }
 
 body .special-nav {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
@@ -58,20 +55,17 @@ body .special-nav {
 }
 
 .hero-section-index {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("https://i.ibb.co/1J1XMGC/IMG-3496.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://i.ibb.co/1J1XMGC/IMG-3496.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://i.ibb.co/rG8SRX4N/IMG-7472.jpg");
   background-position: center center;
   background-size: cover;
   height: 80vh;
 }
-
 .hero-section-index h1 {
   font-family: Ask-Why, Arial, Helvetica, sans-serif;
   font-size: 4em;
   color: #62f256;
   text-align: center;
 }
-
 .hero-section-index button {
   font-size: 1.3em;
 }
@@ -79,7 +73,6 @@ body .special-nav {
 .top-nav {
   height: 20vh;
 }
-
 .top-nav img {
   position: absolute;
   margin-left: auto;
@@ -96,20 +89,17 @@ body .special-nav {
 }
 
 .servicios {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))), url("https://i.ibb.co/2YwjBYW/277256876-353604346782631-3565152095420618656-n.jpg");
   background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("https://i.ibb.co/2YwjBYW/277256876-353604346782631-3565152095420618656-n.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-
 .servicios h1 {
   font-family: Ask-Why, Arial, Helvetica, sans-serif;
   font-size: 3.7em;
   text-align: left;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
 }
-
 .servicios p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2.3em;
@@ -117,7 +107,6 @@ body .special-nav {
   color: #1d2c46;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
 }
-
 .servicios p:last-child {
   margin-bottom: 100px;
 }
@@ -134,68 +123,51 @@ body .special-nav {
 .main--carousel img {
   max-height: 50vh;
 }
-
 .main--carousel video {
   max-height: 50vh;
 }
 
 #grid {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(200px, 10fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(200px, 10fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 10fr));
   grid-gap: 10px;
 }
-
 #grid img {
   width: 100%;
 }
 
 .financing-cards {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  justify-content: space-evenly;
+  align-content: center;
 }
-
 .financing-cards .fc {
   background-color: #f2f4f3;
-  -webkit-transition: 0.25s ease;
   transition: 0.25s ease;
 }
-
 .financing-cards .fc:first-child {
-  margin-right: 0.5em;
+  margin-right: 0.1em;
+  width: 100%;
 }
-
 .financing-cards .fc:last-child {
-  margin-left: 0.5em;
+  margin-left: 0.1em;
 }
-
 .financing-cards .fc:hover {
   background-color: #e6eae8;
 }
 
 .socials-sc {
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
   margin-top: 1em;
 }
-
 .socials-sc img {
   width: 30%;
   padding: 1em;
 }
-
 .socials-sc .sc {
   background-color: #f2f4f3;
   width: 35%;
-  -webkit-transition: 0.25s ease;
   transition: 0.25s ease;
 }
-
 .socials-sc .sc:hover {
   background-color: #e6eae8;
 }
@@ -213,16 +185,14 @@ body .special-nav {
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
   visibility: hidden;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .modal-content {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   background-color: white;
   padding: 1rem 1.5rem;
   width: 24rem;
@@ -245,12 +215,8 @@ body .special-nav {
 .show-modal {
   opacity: 1;
   visibility: visible;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: visibility 0s linear 0s, opacity 0.25s 0s, -webkit-transform 0.25s;
-  transition: visibility 0s linear 0s, opacity 0.25s 0s, -webkit-transform 0.25s;
+  transform: scale(1);
   transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
-  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s, -webkit-transform 0.25s;
 }
 
 body.has-js::before {
@@ -264,7 +230,6 @@ body.has-js::before {
   height: 100vh;
   width: 100vw;
   pointer-events: none;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
   background: #342e37 url("https://icon-library.com/images/spinner-icon-gif/spinner-icon-gif-28.jpg") no-repeat center center/50px;
 }
@@ -276,16 +241,12 @@ body.loaded::before {
 }
 
 .location {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   width: 100%;
 }
-
 .location .location-left {
   width: 49%;
 }
-
 .location .location-right {
   width: 49%;
 }
@@ -297,10 +258,7 @@ body.loaded::before {
     margin-bottom: 0.8em;
   }
   .location {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
     width: 100%;
   }
   .location .location-left {
@@ -358,10 +316,7 @@ body.loaded::before {
     background-color: #1d2c46;
   }
   .financing-cards {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .financing-cards .fc {
     background-color: #f2f4f3;
@@ -378,13 +333,8 @@ body.loaded::before {
     margin-left: 0em;
   }
   .socials-sc {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: space-evenly;
+    flex-direction: column;
     margin-top: 1em;
   }
   .socials-sc img {
@@ -394,7 +344,6 @@ body.loaded::before {
   .socials-sc .sc {
     background-color: #f2f4f3;
     width: 100%;
-    -webkit-transition: 0.25s ease;
     transition: 0.25s ease;
     margin-bottom: 1em;
   }
@@ -402,7 +351,6 @@ body.loaded::before {
     background-color: #e6eae8;
   }
 }
-
 @media (max-width: 600px) {
   .section-styling {
     padding: 1.2em;
@@ -452,10 +400,7 @@ body.loaded::before {
     background-color: #1d2c46;
   }
   .financing-cards {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .financing-cards .fc {
     background-color: #f2f4f3;
@@ -472,13 +417,8 @@ body.loaded::before {
     margin-left: 0em;
   }
   .socials-sc {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: space-evenly;
+    flex-direction: column;
     margin-top: 1em;
   }
   .socials-sc img {
@@ -488,12 +428,10 @@ body.loaded::before {
   .socials-sc .sc {
     background-color: #f2f4f3;
     width: 100%;
-    -webkit-transition: 0.25s ease;
     transition: 0.25s ease;
     margin-bottom: 1em;
   }
   .socials-sc .sc:hover {
     background-color: #e6eae8;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
